@@ -6,7 +6,6 @@
 function getInputFieldValueById(id){
     const inputValue=document.getElementById(id).value
     const inputNumber=parseFloat(inputValue)
-    // console.log(inputNumber)
     return inputNumber;
     
     }
@@ -28,9 +27,11 @@ function getInputFieldValueById(id){
     
     // hidden
     function showSectionById(id){
+        
         // hide all the section
         document.getElementById('donate-section').classList.add('hidden')
         document.getElementById('history-section').classList.add('hidden')
+        
         // remove hidden
         document.getElementById(id).classList.remove('hidden')
     }
